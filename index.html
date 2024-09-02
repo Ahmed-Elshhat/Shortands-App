@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <!-- main Css -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Shorthands App</title>
+  </head>
+  <body>
+    <div class="app">
+      <button class="btn-admin" draggable="true">Admin</button>
+      <button class="btn-user">User</button>
+      <div class="Switcher">
+        <div class="admin">
+          <input
+            type="text"
+            class="inp-sh"
+            placeholder="Write The Shorthand"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            class="inp-shv"
+            placeholder="The Value"
+            autocomplete="off"
+          />
+          <div class="container_btn_add_clear">
+            <button class="btn-add">ADD</button>
+            <button class="clear">Clear</button>
+          </div>
+          <div class="data">
+            <table>
+              <thead>
+                <tr>
+                  <th>#ID</th>
+                  <th>Shorthand</th>
+                  <th>Value</th>
+                  <th>Delete</th>
+                  <th>Update</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="user">
+          <div class="card">
+            <h2 class="shorthand-h2">Go</h2>
+            <input
+              type="text"
+              class="inp-tvsh"
+              placeholder="Type The Value Of This Shorthand"
+            />
+            <div id="valid">
+              <i class="fa-solid fa-check true icons"></i>
+            </div>
+            <div id="not_valid">
+              <i class="fa-solid fa-xmark false icons"></i>
+            </div>
+          </div>
+          <button class="btn-go">GO</button>
+          <button class="btn-check-m">Check</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="./assets/fontawesome/js/all.min.js"></script>
+    <!-- Script Bootstrap -->
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Script JS -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
